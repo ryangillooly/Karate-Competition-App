@@ -16,5 +16,23 @@ namespace Karate_Scoring_App
         {
             InitializeComponent();
         }
+
+        private DateTime _start;
+        private void startTimer_Button_Click(object sender, EventArgs e)
+        {
+            _start = DateTime.Now;
+            timer1.Start();
+        }
+
+        private void stopTimer_Button_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            TimeSpan duration = DateTime.Now - _start;
+            label.Text = duration.ToString();
+        }
+
     }
 }
