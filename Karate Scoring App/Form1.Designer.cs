@@ -49,8 +49,10 @@
             this.punchBlue_Button = new System.Windows.Forms.Button();
             this.lka_PictureBox = new System.Windows.Forms.PictureBox();
             this.blueBack_PictureBox = new System.Windows.Forms.PictureBox();
+            this.redBack_PictureBox = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.lka_PictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.blueBack_PictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.redBack_PictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // startTimer_Button
@@ -138,11 +140,11 @@
             // blueScore_Label
             // 
             this.blueScore_Label.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.blueScore_Label.AutoSize = true;
             this.blueScore_Label.BackColor = System.Drawing.Color.Transparent;
             this.blueScore_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.blueScore_Label.Location = new System.Drawing.Point(889, 329);
+            this.blueScore_Label.Location = new System.Drawing.Point(178, 329);
             this.blueScore_Label.Name = "blueScore_Label";
+            this.blueScore_Label.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.blueScore_Label.Size = new System.Drawing.Size(51, 55);
             this.blueScore_Label.TabIndex = 7;
             this.blueScore_Label.Text = "0";
@@ -238,7 +240,7 @@
             // 
             // lka_PictureBox
             // 
-            this.lka_PictureBox.Location = new System.Drawing.Point(134, 31);
+            this.lka_PictureBox.Location = new System.Drawing.Point(482, -1);
             this.lka_PictureBox.Name = "lka_PictureBox";
             this.lka_PictureBox.Size = new System.Drawing.Size(235, 174);
             this.lka_PictureBox.TabIndex = 16;
@@ -251,6 +253,14 @@
             this.blueBack_PictureBox.Size = new System.Drawing.Size(638, 721);
             this.blueBack_PictureBox.TabIndex = 17;
             this.blueBack_PictureBox.TabStop = false;
+            // 
+            // redBack_PictureBox
+            // 
+            this.redBack_PictureBox.Location = new System.Drawing.Point(0, -1);
+            this.redBack_PictureBox.Name = "redBack_PictureBox";
+            this.redBack_PictureBox.Size = new System.Drawing.Size(604, 721);
+            this.redBack_PictureBox.TabIndex = 18;
+            this.redBack_PictureBox.TabStop = false;
             // 
             // Form1
             // 
@@ -276,12 +286,14 @@
             this.Controls.Add(this.minsLabel);
             this.Controls.Add(this.startTimer_Button);
             this.Controls.Add(this.blueBack_PictureBox);
+            this.Controls.Add(this.redBack_PictureBox);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.lka_PictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.blueBack_PictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.redBack_PictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -308,6 +320,7 @@
         private System.Windows.Forms.Button punchBlue_Button;
         private System.Windows.Forms.PictureBox lka_PictureBox;
         private System.Windows.Forms.PictureBox blueBack_PictureBox;
+        private System.Windows.Forms.PictureBox redBack_PictureBox;
     }
 }
 

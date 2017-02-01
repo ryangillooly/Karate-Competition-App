@@ -81,6 +81,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="redBack.jpg" />
     <None Include="blueBack.jpg" />
     <Content Include="LKA.jpg" />
     <None Include="Resources\LKA.jpg" />

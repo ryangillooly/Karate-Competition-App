@@ -29,25 +29,29 @@ namespace Karate_Scoring_App
 
         private void Form1_Load(object sender, EventArgs e)
         {                                
-            TopMost = true;                                                                     //Application is in front of all other programs
-            //FormBorderStyle = FormBorderStyle.None;                                             //Do not apply any border to this program
-            //WindowState     = FormWindowState.Maximized;
-            //Start this program maximised
+            //TopMost = true;                                                                           //Application is in front of all other programs
+            //FormBorderStyle = FormBorderStyle.None;                                                   //Do not apply any border to this program
+            //WindowState     = FormWindowState.Maximized;                                              //Start this program maximised
 
-            this.BackColor = Color.White;
+            this.BackColor = Color.White;                                                               //Sets the Form background color to white
 
-            object LKA                   = Properties.Resources.ResourceManager.GetObject("LKA");
-            object blueBackground        = Properties.Resources.ResourceManager.GetObject("blueBack");
+            object LKA                   = Properties.Resources.ResourceManager.GetObject("LKA");       //Creates the object LKA, for the LKA image
+            object blueBackground        = Properties.Resources.ResourceManager.GetObject("blueBack");  //Creates the object blueBackground, for the blueBackground image
+            object redBackground         = Properties.Resources.ResourceManager.GetObject("redBack");   //Creates the object redBackground, for the redBackground image
 
-            lka_PictureBox.Image         = (Image)LKA;
-            blueBack_PictureBox.Image    = (Image)blueBackground;
+            lka_PictureBox.Image         = (Image)LKA;                                                  //Sets the LKA Picture Box image = LKA image
+            blueBack_PictureBox.Image    = (Image)blueBackground;                                       //Sets the blueBackground Picture Box image = blueBackground image
+            redBack_PictureBox.Image     = (Image)redBackground;                                        //Sets the redBackground Picture Box image = redBackground image
 
-            lka_PictureBox.SizeMode      = PictureBoxSizeMode.StretchImage;
-            blueBack_PictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
-            
-            blueScore_Label.Parent       = blueBack_PictureBox; 
+            lka_PictureBox.SizeMode      = PictureBoxSizeMode.StretchImage;                             //Stretches the image to the size of the PictureBox
+            blueBack_PictureBox.SizeMode = PictureBoxSizeMode.StretchImage;                             //Stretches the image to the size of the PictureBox
+            redBack_PictureBox.SizeMode  = PictureBoxSizeMode.StretchImage;                             //Stretches the image to the size of the PictureBox
 
-            inputTime_Textbox.Select();                                                         //Puts focus on the textbox to enable typing immediately
+            blueScore_Label.Parent       = blueBack_PictureBox;                                         //Sets the blueBack_PictureBox as the parent of the blueBack_Label
+
+            redScore_Label.Parent = redBack_PictureBox;                                                 //Sets the redBack_PictureBox as the parent of the redBack_Label
+
+            inputTime_Textbox.Select();                                                                 //Puts focus on the textbox to enable typing immediately
         }
 
         //*******************************************************************************//
