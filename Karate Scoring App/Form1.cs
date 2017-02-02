@@ -25,6 +25,7 @@ namespace Karate_Scoring_App
         public Form1()
         {
             InitializeComponent();
+            this.DoubleBuffered = true;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -40,6 +41,12 @@ namespace Karate_Scoring_App
             object backgroundImage      = Properties.Resources.ResourceManager.GetObject("backgroundImage");
             this.BackgroundImage        = (Image)backgroundImage;
             this.BackgroundImageLayout  = ImageLayout.Stretch;
+
+            tableLayoutPanel1.BackColor = Color.Transparent;
+            tableLayoutPanel2.BackColor = Color.Transparent;
+            tableLayoutPanel3.BackColor = Color.Transparent;
+            tableLayoutPanel4.BackColor = Color.Transparent;
+            tableLayoutPanel5.BackColor = Color.Transparent;
 
             inputTime_Textbox.Select();                                                                 //Puts focus on the textbox to enable typing immediately
         }
