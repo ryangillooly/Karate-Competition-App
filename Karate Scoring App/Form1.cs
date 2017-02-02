@@ -40,8 +40,10 @@ namespace Karate_Scoring_App
             object redBackground         = Properties.Resources.ResourceManager.GetObject("redBack");   //Creates the object redBackground, for the redBackground image
 
             lka_PictureBox.Image         = (Image)LKA;                                                  //Sets the LKA Picture Box image = LKA image
-            blueBack_PictureBox.Image    = (Image)blueBackground;                                       //Sets the blueBackground Picture Box image = blueBackground image
-            redBack_PictureBox.Image     = (Image)redBackground;                                        //Sets the redBackground Picture Box image = redBackground image
+            //blueBack_PictureBox.Image    = (Image)blueBackground;                                       //Sets the blueBackground Picture Box image = blueBackground image
+            //redBack_PictureBox.Image     = (Image)redBackground;                                        //Sets the redBackground Picture Box image = redBackground image
+
+            BackgroundImage = (Image)BackgroundImage;
 
             lka_PictureBox.SizeMode      = PictureBoxSizeMode.StretchImage;                             //Stretches the image to the size of the PictureBox
             blueBack_PictureBox.SizeMode = PictureBoxSizeMode.StretchImage;                             //Stretches the image to the size of the PictureBox
@@ -49,14 +51,22 @@ namespace Karate_Scoring_App
 
             blueScore_Label.Parent       = blueBack_PictureBox;                                         //Sets the blueBack_PictureBox as the parent of the blueBack_Label
             blueScore_Label.BackColor    = Color.Transparent;                                           //Sets the background of the label to transparent
+            //blueScore_Label.Left = 300;
 
             redScore_Label.Parent        = redBack_PictureBox;                                          //Sets the redBack_PictureBox as the parent of the redBack_Label
             redScore_Label.BackColor     = Color.Transparent;                                           //Sets the background of the label to transparent
+                                                                                                        // redScore_Label.Left = 250;
+
+            //blueBack_PictureBox.Image.Width = 
 
             inputTime_Textbox.Select();                                                                 //Puts focus on the textbox to enable typing immediately
         }
 
-         //*******************************************************************************//
+        //var ratioX = (double)maxWidth / image.Width;
+
+
+
+        //*******************************************************************************//
         // Countdown Timer Section //
 
         private void startTimer_Button_Click(object sender, EventArgs e)

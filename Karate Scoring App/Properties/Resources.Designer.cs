@@ -63,6 +63,16 @@ namespace Karate_Scoring_App.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap backgroundImage {
+            get {
+                object obj = ResourceManager.GetObject("backgroundImage", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap blueBack {
             get {
                 object obj = ResourceManager.GetObject("blueBack", resourceCulture);

@@ -131,7 +131,7 @@
             // 
             this.redScore_Label.AutoSize = true;
             this.redScore_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.redScore_Label.Location = new System.Drawing.Point(264, 329);
+            this.redScore_Label.Location = new System.Drawing.Point(256, 329);
             this.redScore_Label.Name = "redScore_Label";
             this.redScore_Label.Size = new System.Drawing.Size(98, 108);
             this.redScore_Label.TabIndex = 7;
@@ -251,13 +251,17 @@
             // 
             // blueScore_Label
             // 
+            this.blueScore_Label.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.blueScore_Label.AutoSize = true;
             this.blueScore_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.blueScore_Label.Location = new System.Drawing.Point(333, 329);
+            this.blueScore_Label.Location = new System.Drawing.Point(630, 329);
             this.blueScore_Label.Name = "blueScore_Label";
             this.blueScore_Label.Size = new System.Drawing.Size(98, 108);
             this.blueScore_Label.TabIndex = 19;
             this.blueScore_Label.Text = "0";
+            this.blueScore_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Form1
             // 
