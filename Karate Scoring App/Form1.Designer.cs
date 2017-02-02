@@ -38,7 +38,6 @@
             this.colonLabel = new System.Windows.Forms.Label();
             this.secondsLabel = new System.Windows.Forms.Label();
             this.redScore_Label = new System.Windows.Forms.Label();
-            this.blueScore_Label = new System.Windows.Forms.Label();
             this.punchRed_Button = new System.Windows.Forms.Button();
             this.sweepRed_Button = new System.Windows.Forms.Button();
             this.jodanKickRed_Button = new System.Windows.Forms.Button();
@@ -50,6 +49,7 @@
             this.lka_PictureBox = new System.Windows.Forms.PictureBox();
             this.blueBack_PictureBox = new System.Windows.Forms.PictureBox();
             this.redBack_PictureBox = new System.Windows.Forms.PictureBox();
+            this.blueScore_Label = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.lka_PictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.blueBack_PictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.redBack_PictureBox)).BeginInit();
@@ -61,7 +61,7 @@
             this.startTimer_Button.Name = "startTimer_Button";
             this.startTimer_Button.Size = new System.Drawing.Size(97, 64);
             this.startTimer_Button.TabIndex = 0;
-            this.startTimer_Button.Text = "Hajime";
+            this.startTimer_Button.Text = "Start";
             this.startTimer_Button.UseVisualStyleBackColor = true;
             this.startTimer_Button.Click += new System.EventHandler(this.startTimer_Button_Click);
             // 
@@ -86,7 +86,7 @@
             this.pauseTimer_Button.Name = "pauseTimer_Button";
             this.pauseTimer_Button.Size = new System.Drawing.Size(97, 64);
             this.pauseTimer_Button.TabIndex = 2;
-            this.pauseTimer_Button.Text = "Yame";
+            this.pauseTimer_Button.Text = "Pause";
             this.pauseTimer_Button.UseVisualStyleBackColor = true;
             this.pauseTimer_Button.Click += new System.EventHandler(this.pauseTimer_Button_Click);
             // 
@@ -96,15 +96,15 @@
             this.resetTime_Button.Name = "resetTime_Button";
             this.resetTime_Button.Size = new System.Drawing.Size(97, 64);
             this.resetTime_Button.TabIndex = 3;
-            this.resetTime_Button.Text = "Reset Time / Score";
+            this.resetTime_Button.Text = "Stop / Reset";
             this.resetTime_Button.UseVisualStyleBackColor = true;
             this.resetTime_Button.Click += new System.EventHandler(this.resetTime_Button_Click);
             // 
             // inputTime_Textbox
             // 
-            this.inputTime_Textbox.Location = new System.Drawing.Point(586, 605);
+            this.inputTime_Textbox.Location = new System.Drawing.Point(593, 605);
             this.inputTime_Textbox.Name = "inputTime_Textbox";
-            this.inputTime_Textbox.Size = new System.Drawing.Size(40, 20);
+            this.inputTime_Textbox.Size = new System.Drawing.Size(25, 20);
             this.inputTime_Textbox.TabIndex = 4;
             // 
             // colonLabel
@@ -130,25 +130,12 @@
             // redScore_Label
             // 
             this.redScore_Label.AutoSize = true;
-            this.redScore_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.redScore_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.redScore_Label.Location = new System.Drawing.Point(264, 329);
             this.redScore_Label.Name = "redScore_Label";
-            this.redScore_Label.Size = new System.Drawing.Size(51, 55);
+            this.redScore_Label.Size = new System.Drawing.Size(98, 108);
             this.redScore_Label.TabIndex = 7;
             this.redScore_Label.Text = "0";
-            // 
-            // blueScore_Label
-            // 
-            this.blueScore_Label.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.blueScore_Label.BackColor = System.Drawing.Color.Transparent;
-            this.blueScore_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.blueScore_Label.Location = new System.Drawing.Point(178, 329);
-            this.blueScore_Label.Name = "blueScore_Label";
-            this.blueScore_Label.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.blueScore_Label.Size = new System.Drawing.Size(51, 55);
-            this.blueScore_Label.TabIndex = 7;
-            this.blueScore_Label.Text = "0";
-            this.blueScore_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // punchRed_Button
             // 
@@ -262,11 +249,22 @@
             this.redBack_PictureBox.TabIndex = 18;
             this.redBack_PictureBox.TabStop = false;
             // 
+            // blueScore_Label
+            // 
+            this.blueScore_Label.AutoSize = true;
+            this.blueScore_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.blueScore_Label.Location = new System.Drawing.Point(333, 329);
+            this.blueScore_Label.Name = "blueScore_Label";
+            this.blueScore_Label.Size = new System.Drawing.Size(98, 108);
+            this.blueScore_Label.TabIndex = 19;
+            this.blueScore_Label.Text = "0";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1237, 714);
+            this.Controls.Add(this.blueScore_Label);
             this.Controls.Add(this.lka_PictureBox);
             this.Controls.Add(this.chudanKickBlue_Button);
             this.Controls.Add(this.jodanKickBlue_Button);
@@ -276,7 +274,6 @@
             this.Controls.Add(this.jodanKickRed_Button);
             this.Controls.Add(this.sweepRed_Button);
             this.Controls.Add(this.punchRed_Button);
-            this.Controls.Add(this.blueScore_Label);
             this.Controls.Add(this.redScore_Label);
             this.Controls.Add(this.secondsLabel);
             this.Controls.Add(this.colonLabel);
@@ -309,7 +306,6 @@
         private System.Windows.Forms.Label colonLabel;
         private System.Windows.Forms.Label secondsLabel;
         private System.Windows.Forms.Label redScore_Label;
-        private System.Windows.Forms.Label blueScore_Label;
         private System.Windows.Forms.Button punchRed_Button;
         private System.Windows.Forms.Button sweepRed_Button;
         private System.Windows.Forms.Button jodanKickRed_Button;
@@ -321,6 +317,7 @@
         private System.Windows.Forms.PictureBox lka_PictureBox;
         private System.Windows.Forms.PictureBox blueBack_PictureBox;
         private System.Windows.Forms.PictureBox redBack_PictureBox;
+        private System.Windows.Forms.Label blueScore_Label;
     }
 }
 

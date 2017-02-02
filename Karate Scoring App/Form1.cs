@@ -17,7 +17,7 @@ namespace Karate_Scoring_App
         int state = 0;
 
         //Global variables
-        internal const int SC_CLOSE = 0xF060;           //close button's code in windows api
+        internal const int CloseApp_Click = 0xF060;     //close button's code in windows api
         internal const int MF_GRAYED = 0x1;             //disabled button status (enabled = false)
         internal const int MF_ENABLED = 0x00000000;     //enabled button status
         internal const int MF_DISABLED = 0x00000002;    //disabled button status
@@ -48,31 +48,28 @@ namespace Karate_Scoring_App
             redBack_PictureBox.SizeMode  = PictureBoxSizeMode.StretchImage;                             //Stretches the image to the size of the PictureBox
 
             blueScore_Label.Parent       = blueBack_PictureBox;                                         //Sets the blueBack_PictureBox as the parent of the blueBack_Label
+            blueScore_Label.BackColor    = Color.Transparent;                                           //Sets the background of the label to transparent
 
-            redScore_Label.Parent = redBack_PictureBox;                                                 //Sets the redBack_PictureBox as the parent of the redBack_Label
+            redScore_Label.Parent        = redBack_PictureBox;                                          //Sets the redBack_PictureBox as the parent of the redBack_Label
+            redScore_Label.BackColor     = Color.Transparent;                                           //Sets the background of the label to transparent
 
             inputTime_Textbox.Select();                                                                 //Puts focus on the textbox to enable typing immediately
         }
 
-        //*******************************************************************************//
+         //*******************************************************************************//
         // Countdown Timer Section //
 
         private void startTimer_Button_Click(object sender, EventArgs e)
         {
-            if (timer1.Enabled)     //If timer is enabled, break out. Don't allow it to reset m = labeltext
+            if (timer1.Enabled || inputTime_Textbox.Text == "" || inputTime_Textbox.Text == "0")        //If timer is enabled, break out. Don't allow it to reset m = labeltext. If input is blank or 0 then break out.
             {
-                return;             //Break out of the startTimer_Button_Click method
+                return;                                                                                 //Break out of the startTimer_Button_Click method
             }
 
-            if (state == 1)         //If state  = 1, the pause button has been pressed, and the timer has stopped
+            if (state == 1)                                                                             //If state  = 1, the pause button has been pressed, and the timer has stopped
             {
-                timer1.Start();     //Re-start the timer from where it left off
-                return;             //Break out of the startTimer_Button_Click method
-            }
-
-            if (inputTime_Textbox.Text == "")
-            {
-                inputTime_Textbox.Text = "0";
+                timer1.Start();                                                                         //Re-start the timer from where it left off
+                return;                                                                                 //Break out of the startTimer_Button_Click method
             }
 
             m = Convert.ToInt32(inputTime_Textbox.Text);
@@ -118,7 +115,8 @@ namespace Karate_Scoring_App
             if (timer1.Enabled)
             {
                 state = 3; //State is equal to 3 if the timer is active when pressing RESET
-                m = Convert.ToInt32(inputTime_Textbox.Text);
+                //m = Convert.ToInt32(inputTime_Textbox.Text);
+                timer1.Stop();
             }
             else
             {
@@ -132,7 +130,7 @@ namespace Karate_Scoring_App
             s = 0;
         }
 
-        //*******************************************************************************//
+         //*******************************************************************************//
         // Red Team Score //
 
         int redScore;
@@ -165,6 +163,45 @@ namespace Karate_Scoring_App
         }
 
         private void sweepRed_Button_Click(object sender, EventArgs e)
+        {
+            if (timer1.Enabled)
+            {
+                redScore = Convert.ToInt32(redScore_Label.Text) + 3;
+                redScore_Label.Text = Convert.ToString(redScore);
+            }
+        }
+
+        //********************//
+        // Keyboard Strokes   //
+
+        private void punchRed_KeyStroke_Press(object sender, EventArgs e)
+        {
+            if (timer1.Enabled)
+            {
+                redScore = Convert.ToInt32(redScore_Label.Text) + 1;
+                redScore_Label.Text = Convert.ToString(redScore);
+            }
+        }
+
+        private void chudanKickRed_KeyStroke_Press(object sender, EventArgs e)
+        {
+            if (timer1.Enabled)
+            {
+                redScore = Convert.ToInt32(redScore_Label.Text) + 2;
+                redScore_Label.Text = Convert.ToString(redScore);
+            }
+        }
+
+        private void jodanKickRed_KeyStroke_Press(object sender, EventArgs e)
+        {
+            if (timer1.Enabled)
+            {
+                redScore = Convert.ToInt32(redScore_Label.Text) + 3;
+                redScore_Label.Text = Convert.ToString(redScore);
+            }
+        }
+
+        private void sweepRed_KeyStroke_Press(object sender, EventArgs e)
         {
             if (timer1.Enabled)
             {
@@ -206,6 +243,46 @@ namespace Karate_Scoring_App
         }
 
         private void sweepBlue_Button_Click(object sender, EventArgs e)
+        {
+            if (timer1.Enabled)
+            {
+                blueScore = Convert.ToInt32(blueScore_Label.Text) + 3;
+                blueScore_Label.Text = Convert.ToString(blueScore);
+            }
+        }
+
+
+         //********************//
+        // Keyboard Strokes   //
+
+        private void punchBlue_KeyStroke_Press(object sender, EventArgs e)
+        {
+            if (timer1.Enabled)
+            {
+                blueScore = Convert.ToInt32(blueScore_Label.Text) + 1;
+                blueScore_Label.Text = Convert.ToString(blueScore);
+            }
+        }
+
+        private void chudanKickBlue_KeyStroke_Press(object sender, EventArgs e)
+        {
+            if (timer1.Enabled)
+            {
+                blueScore = Convert.ToInt32(blueScore_Label.Text) + 2;
+                blueScore_Label.Text = Convert.ToString(blueScore);
+            }
+        }
+
+        private void jodanKickBlue_KeyStroke_Press(object sender, EventArgs e)
+        {
+            if (timer1.Enabled)
+            {
+                blueScore = Convert.ToInt32(blueScore_Label.Text) + 3;
+                blueScore_Label.Text = Convert.ToString(blueScore);
+            }
+        }
+
+        private void sweepBlue_KeyStroke_Press(object sender, EventArgs e)
         {
             if (timer1.Enabled)
             {
