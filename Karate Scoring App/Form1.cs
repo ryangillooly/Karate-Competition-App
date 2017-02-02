@@ -33,31 +33,13 @@ namespace Karate_Scoring_App
             //FormBorderStyle = FormBorderStyle.None;                                                   //Do not apply any border to this program
             //WindowState     = FormWindowState.Maximized;                                              //Start this program maximised
 
-            this.BackColor = Color.White;                                                               //Sets the Form background color to white
+            object LKA                  = Properties.Resources.ResourceManager.GetObject("LKA");       //Creates the object LKA, for the LKA image
+            lka_PictureBox.Image        = (Image)LKA;
+            lka_PictureBox.SizeMode     = PictureBoxSizeMode.StretchImage;
 
-            object LKA                   = Properties.Resources.ResourceManager.GetObject("LKA");       //Creates the object LKA, for the LKA image
-            object blueBackground        = Properties.Resources.ResourceManager.GetObject("blueBack");  //Creates the object blueBackground, for the blueBackground image
-            object redBackground         = Properties.Resources.ResourceManager.GetObject("redBack");   //Creates the object redBackground, for the redBackground image
-
-            lka_PictureBox.Image         = (Image)LKA;                                                  //Sets the LKA Picture Box image = LKA image
-            //blueBack_PictureBox.Image    = (Image)blueBackground;                                       //Sets the blueBackground Picture Box image = blueBackground image
-            //redBack_PictureBox.Image     = (Image)redBackground;                                        //Sets the redBackground Picture Box image = redBackground image
-
-            BackgroundImage = (Image)BackgroundImage;
-
-            lka_PictureBox.SizeMode      = PictureBoxSizeMode.StretchImage;                             //Stretches the image to the size of the PictureBox
-            blueBack_PictureBox.SizeMode = PictureBoxSizeMode.StretchImage;                             //Stretches the image to the size of the PictureBox
-            redBack_PictureBox.SizeMode  = PictureBoxSizeMode.StretchImage;                             //Stretches the image to the size of the PictureBox
-
-            blueScore_Label.Parent       = blueBack_PictureBox;                                         //Sets the blueBack_PictureBox as the parent of the blueBack_Label
-            blueScore_Label.BackColor    = Color.Transparent;                                           //Sets the background of the label to transparent
-            //blueScore_Label.Left = 300;
-
-            redScore_Label.Parent        = redBack_PictureBox;                                          //Sets the redBack_PictureBox as the parent of the redBack_Label
-            redScore_Label.BackColor     = Color.Transparent;                                           //Sets the background of the label to transparent
-                                                                                                        // redScore_Label.Left = 250;
-
-            //blueBack_PictureBox.Image.Width = 
+            object backgroundImage      = Properties.Resources.ResourceManager.GetObject("backgroundImage");
+            this.BackgroundImage        = (Image)backgroundImage;
+            this.BackgroundImageLayout  = ImageLayout.Stretch;
 
             inputTime_Textbox.Select();                                                                 //Puts focus on the textbox to enable typing immediately
         }
