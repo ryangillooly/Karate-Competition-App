@@ -25,34 +25,40 @@ namespace Karate_Scoring_App
         public Form1()
         {
             InitializeComponent();
-            this.DoubleBuffered = true;
         }
 
         private void Form1_Load(object sender, EventArgs e)
-        {                                
+        {
+            this.DoubleBuffered = true;
+
             //TopMost = true;                                                                           //Application is in front of all other programs
             //FormBorderStyle = FormBorderStyle.None;                                                   //Do not apply any border to this program
             //WindowState     = FormWindowState.Maximized;                                              //Start this program maximised
 
-            object LKA                  = Properties.Resources.ResourceManager.GetObject("LKA");       //Creates the object LKA, for the LKA image
-            lka_PictureBox.Image        = (Image)LKA;
-            lka_PictureBox.SizeMode     = PictureBoxSizeMode.StretchImage;
+            object backgroundImage = Properties.Resources.ResourceManager.GetObject("backgroundImage");
+            this.BackgroundImage = (Image)backgroundImage;
 
-            object backgroundImage      = Properties.Resources.ResourceManager.GetObject("backgroundImage");
-            this.BackgroundImage        = (Image)backgroundImage;
-            this.BackgroundImageLayout  = ImageLayout.Stretch;
-
-            tableLayoutPanel1.BackColor = Color.Transparent;
-            tableLayoutPanel2.BackColor = Color.Transparent;
-            tableLayoutPanel3.BackColor = Color.Transparent;
-            tableLayoutPanel4.BackColor = Color.Transparent;
-            tableLayoutPanel5.BackColor = Color.Transparent;
 
             inputTime_Textbox.Select();                                                                 //Puts focus on the textbox to enable typing immediately
         }
 
-        //var ratioX = (double)maxWidth / image.Width;
+        public static void SetDoubleBuffered(System.Windows.Forms.Control c)
+        {
+            if (System.Windows.Forms.SystemInformation.TerminalServerSession)
+                return;
+            System.Reflection.PropertyInfo aProp = typeof(System.Windows.Forms.Control).GetProperty("DoubleBuffered", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
+            aProp.SetValue(c, true, null);
+        }
 
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                CreateParams cp = base.CreateParams;
+                cp.ExStyle |= 0x02000000;
+                return cp;
+            }
+        }
 
 
         //*******************************************************************************//
@@ -175,11 +181,7 @@ namespace Karate_Scoring_App
 
         private void punchRed_KeyStroke_Press(object sender, EventArgs e)
         {
-            if (timer1.Enabled)
-            {
-                redScore = Convert.ToInt32(redScore_Label.Text) + 1;
-                redScore_Label.Text = Convert.ToString(redScore);
-            }
+
         }
 
         private void chudanKickRed_KeyStroke_Press(object sender, EventArgs e)
