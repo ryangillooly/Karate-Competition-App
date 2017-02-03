@@ -82,6 +82,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\karate-punch-icon-white.png" />
+    <None Include="Resources\karate-punch-icon.png" />
     <None Include="Resources\backgroundImage.jpg" />
     <None Include="backgroundImage.jpg" />
     <None Include="redBack.jpg" />

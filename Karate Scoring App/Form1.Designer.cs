@@ -46,19 +46,19 @@
             this.minsLabel = new System.Windows.Forms.Label();
             this.secondsLabel = new System.Windows.Forms.Label();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
-            this.lka_PictureBox = new System.Windows.Forms.PictureBox();
-            this.punchRed_Button = new System.Windows.Forms.Button();
             this.chudanKick_Button = new System.Windows.Forms.Button();
             this.jodanKickRed_Button = new System.Windows.Forms.Button();
             this.sweepRed_Button = new System.Windows.Forms.Button();
             this.redScore_Label = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.punchRed_Button = new System.Windows.Forms.Button();
+            this.lka_PictureBox = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.lka_PictureBox)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.lka_PictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // startTimer_Button
@@ -280,31 +280,6 @@
             this.tableLayoutPanel5.Size = new System.Drawing.Size(323, 93);
             this.tableLayoutPanel5.TabIndex = 24;
             // 
-            // lka_PictureBox
-            // 
-            this.lka_PictureBox.BackColor = System.Drawing.Color.Transparent;
-            this.lka_PictureBox.BackgroundImage = global::Karate_Scoring_App.Properties.Resources.LKA;
-            this.lka_PictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.lka_PictureBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lka_PictureBox.Location = new System.Drawing.Point(3, 3);
-            this.lka_PictureBox.Name = "lka_PictureBox";
-            this.lka_PictureBox.Size = new System.Drawing.Size(317, 201);
-            this.lka_PictureBox.TabIndex = 16;
-            this.lka_PictureBox.TabStop = false;
-            this.lka_PictureBox.WaitOnLoad = true;
-            // 
-            // punchRed_Button
-            // 
-            this.punchRed_Button.AccessibleRole = System.Windows.Forms.AccessibleRole.MenuBar;
-            this.punchRed_Button.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.punchRed_Button.Location = new System.Drawing.Point(3, 535);
-            this.punchRed_Button.Name = "punchRed_Button";
-            this.punchRed_Button.Size = new System.Drawing.Size(448, 44);
-            this.punchRed_Button.TabIndex = 12;
-            this.punchRed_Button.Text = "Jodan/Chudan Punch";
-            this.punchRed_Button.UseVisualStyleBackColor = true;
-            this.punchRed_Button.Click += new System.EventHandler(this.punchRed_Button_Click);
-            // 
             // chudanKick_Button
             // 
             this.chudanKick_Button.AccessibleRole = System.Windows.Forms.AccessibleRole.MenuBar;
@@ -369,13 +344,44 @@
             this.tableLayoutPanel1.RowCount = 7;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 167F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 244F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 121F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 14F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 157F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 45F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 43F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 22F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(454, 714);
             this.tableLayoutPanel1.TabIndex = 25;
+            // 
+            // punchRed_Button
+            // 
+            this.punchRed_Button.AccessibleRole = System.Windows.Forms.AccessibleRole.MenuBar;
+            this.punchRed_Button.BackgroundImage = global::Karate_Scoring_App.Properties.Resources.karate_punch_icon;
+            this.punchRed_Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.punchRed_Button.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.punchRed_Button.FlatAppearance.BorderSize = 0;
+            this.punchRed_Button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.punchRed_Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.punchRed_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.punchRed_Button.ForeColor = System.Drawing.Color.Transparent;
+            this.punchRed_Button.Location = new System.Drawing.Point(3, 428);
+            this.punchRed_Button.Name = "punchRed_Button";
+            this.punchRed_Button.Size = new System.Drawing.Size(448, 151);
+            this.punchRed_Button.TabIndex = 12;
+            this.punchRed_Button.UseVisualStyleBackColor = true;
+            this.punchRed_Button.Click += new System.EventHandler(this.punchRed_Button_Click);
+            // 
+            // lka_PictureBox
+            // 
+            this.lka_PictureBox.BackColor = System.Drawing.Color.Transparent;
+            this.lka_PictureBox.BackgroundImage = global::Karate_Scoring_App.Properties.Resources.LKA;
+            this.lka_PictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.lka_PictureBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lka_PictureBox.Location = new System.Drawing.Point(3, 3);
+            this.lka_PictureBox.Name = "lka_PictureBox";
+            this.lka_PictureBox.Size = new System.Drawing.Size(317, 201);
+            this.lka_PictureBox.TabIndex = 16;
+            this.lka_PictureBox.TabStop = false;
+            this.lka_PictureBox.WaitOnLoad = true;
             // 
             // Form1
             // 
@@ -400,9 +406,9 @@
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel5.ResumeLayout(false);
             this.tableLayoutPanel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.lka_PictureBox)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.lka_PictureBox)).EndInit();
             this.ResumeLayout(false);
 
         }

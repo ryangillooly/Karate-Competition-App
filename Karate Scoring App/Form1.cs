@@ -38,7 +38,6 @@ namespace Karate_Scoring_App
             object backgroundImage = Properties.Resources.ResourceManager.GetObject("backgroundImage");
             this.BackgroundImage = (Image)backgroundImage;
 
-
             inputTime_Textbox.Select();                                                                 //Puts focus on the textbox to enable typing immediately
         }
 
