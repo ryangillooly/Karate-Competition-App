@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Drawing.Imaging;
+using System.Drawing.Drawing2D;
 
 namespace Karate_Scoring_App
 {
@@ -33,10 +35,11 @@ namespace Karate_Scoring_App
 
             //TopMost = true;                                                                           //Application is in front of all other programs
             //FormBorderStyle = FormBorderStyle.None;                                                   //Do not apply any border to this program
-            //WindowState     = FormWindowState.Maximized;                                              //Start this program maximised
+            WindowState     = FormWindowState.Maximized;                                              //Start this program maximised
 
-            object backgroundImage = Properties.Resources.ResourceManager.GetObject("backgroundImage");
+            object backgroundImage = Properties.Resources.ResourceManager.GetObject("backgroundimage_1280");
             this.BackgroundImage = (Image)backgroundImage;
+
 
             inputTime_Textbox.Select();                                                                 //Puts focus on the textbox to enable typing immediately
         }

@@ -37,7 +37,6 @@
             this.chudanKickBlue_Button = new System.Windows.Forms.Button();
             this.jodanKickBlue_Button = new System.Windows.Forms.Button();
             this.sweepBlue_Button = new System.Windows.Forms.Button();
-            this.punchBlue_Button = new System.Windows.Forms.Button();
             this.blueScore_Label = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
@@ -46,13 +45,14 @@
             this.minsLabel = new System.Windows.Forms.Label();
             this.secondsLabel = new System.Windows.Forms.Label();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
-            this.chudanKick_Button = new System.Windows.Forms.Button();
             this.jodanKickRed_Button = new System.Windows.Forms.Button();
             this.sweepRed_Button = new System.Windows.Forms.Button();
             this.redScore_Label = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.punchRed_Button = new System.Windows.Forms.Button();
+            this.chudanKick_Button = new System.Windows.Forms.Button();
             this.lka_PictureBox = new System.Windows.Forms.PictureBox();
+            this.punchBlue_Button = new System.Windows.Forms.Button();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
@@ -144,23 +144,12 @@
             this.sweepBlue_Button.UseVisualStyleBackColor = true;
             this.sweepBlue_Button.Click += new System.EventHandler(this.sweepBlue_Button_Click);
             // 
-            // punchBlue_Button
-            // 
-            this.punchBlue_Button.AccessibleRole = System.Windows.Forms.AccessibleRole.MenuBar;
-            this.punchBlue_Button.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.punchBlue_Button.Location = new System.Drawing.Point(3, 535);
-            this.punchBlue_Button.Name = "punchBlue_Button";
-            this.punchBlue_Button.Size = new System.Drawing.Size(448, 44);
-            this.punchBlue_Button.TabIndex = 12;
-            this.punchBlue_Button.Text = "Jodan/Chudan Punch";
-            this.punchBlue_Button.UseVisualStyleBackColor = true;
-            this.punchBlue_Button.Click += new System.EventHandler(this.punchBlue_Button_Click);
-            // 
             // blueScore_Label
             // 
             this.blueScore_Label.AutoSize = true;
             this.blueScore_Label.Dock = System.Windows.Forms.DockStyle.Fill;
             this.blueScore_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.blueScore_Label.ForeColor = System.Drawing.Color.Transparent;
             this.blueScore_Label.Location = new System.Drawing.Point(3, 167);
             this.blueScore_Label.Name = "blueScore_Label";
             this.blueScore_Label.Size = new System.Drawing.Size(448, 244);
@@ -170,7 +159,11 @@
             // 
             // tableLayoutPanel2
             // 
+            this.tableLayoutPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel2.BackColor = System.Drawing.Color.Transparent;
+            this.tableLayoutPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.tableLayoutPanel2.CausesValidation = false;
             this.tableLayoutPanel2.ColumnCount = 1;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel2.Controls.Add(this.punchBlue_Button, 0, 3);
@@ -178,14 +171,13 @@
             this.tableLayoutPanel2.Controls.Add(this.jodanKickBlue_Button, 0, 5);
             this.tableLayoutPanel2.Controls.Add(this.sweepBlue_Button, 0, 6);
             this.tableLayoutPanel2.Controls.Add(this.blueScore_Label, 0, 1);
-            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Right;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(783, 0);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 7;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 167F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 244F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 121F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 12F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 159F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 45F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 43F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 22F));
@@ -194,7 +186,8 @@
             // 
             // tableLayoutPanel3
             // 
-            this.tableLayoutPanel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel3.ColumnCount = 1;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.Controls.Add(this.lka_PictureBox, 0, 0);
@@ -207,7 +200,10 @@
             // 
             // tableLayoutPanel4
             // 
+            this.tableLayoutPanel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel4.BackColor = System.Drawing.Color.Black;
+            this.tableLayoutPanel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.tableLayoutPanel4.ColumnCount = 3;
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 43F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14F));
@@ -218,7 +214,7 @@
             this.tableLayoutPanel4.Location = new System.Drawing.Point(457, 205);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 1;
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 92F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 95F));
             this.tableLayoutPanel4.Size = new System.Drawing.Size(323, 92);
             this.tableLayoutPanel4.TabIndex = 23;
             // 
@@ -230,7 +226,7 @@
             this.colonLabel.ForeColor = System.Drawing.Color.White;
             this.colonLabel.Location = new System.Drawing.Point(141, 0);
             this.colonLabel.Name = "colonLabel";
-            this.colonLabel.Size = new System.Drawing.Size(39, 92);
+            this.colonLabel.Size = new System.Drawing.Size(39, 95);
             this.colonLabel.TabIndex = 5;
             this.colonLabel.Text = ":";
             this.colonLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -243,7 +239,7 @@
             this.minsLabel.ForeColor = System.Drawing.Color.White;
             this.minsLabel.Location = new System.Drawing.Point(3, 0);
             this.minsLabel.Name = "minsLabel";
-            this.minsLabel.Size = new System.Drawing.Size(132, 92);
+            this.minsLabel.Size = new System.Drawing.Size(132, 95);
             this.minsLabel.TabIndex = 1;
             this.minsLabel.Text = "00";
             this.minsLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -256,13 +252,15 @@
             this.secondsLabel.ForeColor = System.Drawing.Color.White;
             this.secondsLabel.Location = new System.Drawing.Point(186, 0);
             this.secondsLabel.Name = "secondsLabel";
-            this.secondsLabel.Size = new System.Drawing.Size(134, 92);
+            this.secondsLabel.Size = new System.Drawing.Size(134, 95);
             this.secondsLabel.TabIndex = 6;
             this.secondsLabel.Text = "00";
             this.secondsLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // tableLayoutPanel5
             // 
+            this.tableLayoutPanel5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel5.BackColor = System.Drawing.Color.Transparent;
             this.tableLayoutPanel5.ColumnCount = 3;
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
@@ -279,18 +277,6 @@
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 63F));
             this.tableLayoutPanel5.Size = new System.Drawing.Size(323, 93);
             this.tableLayoutPanel5.TabIndex = 24;
-            // 
-            // chudanKick_Button
-            // 
-            this.chudanKick_Button.AccessibleRole = System.Windows.Forms.AccessibleRole.MenuBar;
-            this.chudanKick_Button.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.chudanKick_Button.Location = new System.Drawing.Point(3, 585);
-            this.chudanKick_Button.Name = "chudanKick_Button";
-            this.chudanKick_Button.Size = new System.Drawing.Size(448, 39);
-            this.chudanKick_Button.TabIndex = 15;
-            this.chudanKick_Button.Text = "Chudan Kick";
-            this.chudanKick_Button.UseVisualStyleBackColor = true;
-            this.chudanKick_Button.Click += new System.EventHandler(this.chudanKickRed_Button_Click);
             // 
             // jodanKickRed_Button
             // 
@@ -330,6 +316,8 @@
             // 
             // tableLayoutPanel1
             // 
+            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.tableLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -338,7 +326,6 @@
             this.tableLayoutPanel1.Controls.Add(this.jodanKickRed_Button, 0, 5);
             this.tableLayoutPanel1.Controls.Add(this.sweepRed_Button, 0, 6);
             this.tableLayoutPanel1.Controls.Add(this.redScore_Label, 0, 1);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 7;
@@ -355,7 +342,6 @@
             // punchRed_Button
             // 
             this.punchRed_Button.AccessibleRole = System.Windows.Forms.AccessibleRole.MenuBar;
-            this.punchRed_Button.BackgroundImage = global::Karate_Scoring_App.Properties.Resources.karate_punch_icon;
             this.punchRed_Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.punchRed_Button.Dock = System.Windows.Forms.DockStyle.Fill;
             this.punchRed_Button.FlatAppearance.BorderSize = 0;
@@ -363,6 +349,7 @@
             this.punchRed_Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.punchRed_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.punchRed_Button.ForeColor = System.Drawing.Color.Transparent;
+            this.punchRed_Button.Image = global::Karate_Scoring_App.Properties.Resources.karate_punch_icon_right;
             this.punchRed_Button.Location = new System.Drawing.Point(3, 428);
             this.punchRed_Button.Name = "punchRed_Button";
             this.punchRed_Button.Size = new System.Drawing.Size(448, 151);
@@ -370,11 +357,23 @@
             this.punchRed_Button.UseVisualStyleBackColor = true;
             this.punchRed_Button.Click += new System.EventHandler(this.punchRed_Button_Click);
             // 
+            // chudanKick_Button
+            // 
+            this.chudanKick_Button.AccessibleRole = System.Windows.Forms.AccessibleRole.MenuBar;
+            this.chudanKick_Button.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.chudanKick_Button.Location = new System.Drawing.Point(3, 585);
+            this.chudanKick_Button.Name = "chudanKick_Button";
+            this.chudanKick_Button.Size = new System.Drawing.Size(448, 39);
+            this.chudanKick_Button.TabIndex = 15;
+            this.chudanKick_Button.Text = "Chudan Kick";
+            this.chudanKick_Button.UseVisualStyleBackColor = true;
+            this.chudanKick_Button.Click += new System.EventHandler(this.chudanKickRed_Button_Click);
+            // 
             // lka_PictureBox
             // 
-            this.lka_PictureBox.BackColor = System.Drawing.Color.Transparent;
+            this.lka_PictureBox.BackColor = System.Drawing.Color.White;
             this.lka_PictureBox.BackgroundImage = global::Karate_Scoring_App.Properties.Resources.LKA;
-            this.lka_PictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.lka_PictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.lka_PictureBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lka_PictureBox.Location = new System.Drawing.Point(3, 3);
             this.lka_PictureBox.Name = "lka_PictureBox";
@@ -382,6 +381,22 @@
             this.lka_PictureBox.TabIndex = 16;
             this.lka_PictureBox.TabStop = false;
             this.lka_PictureBox.WaitOnLoad = true;
+            // 
+            // punchBlue_Button
+            // 
+            this.punchBlue_Button.AccessibleRole = System.Windows.Forms.AccessibleRole.MenuBar;
+            this.punchBlue_Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.punchBlue_Button.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.punchBlue_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.punchBlue_Button.ForeColor = System.Drawing.Color.Transparent;
+            this.punchBlue_Button.Image = global::Karate_Scoring_App.Properties.Resources.karate_punch_icon_left;
+            this.punchBlue_Button.Location = new System.Drawing.Point(3, 426);
+            this.punchBlue_Button.Name = "punchBlue_Button";
+            this.punchBlue_Button.Size = new System.Drawing.Size(448, 153);
+            this.punchBlue_Button.TabIndex = 12;
+            this.punchBlue_Button.Text = "\r\n";
+            this.punchBlue_Button.UseVisualStyleBackColor = true;
+            this.punchBlue_Button.Click += new System.EventHandler(this.punchBlue_Button_Click);
             // 
             // Form1
             // 
