@@ -7,8 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Drawing.Imaging;
-using System.Drawing.Drawing2D;
 
 namespace Karate_Scoring_App
 {
@@ -17,6 +15,7 @@ namespace Karate_Scoring_App
         int m = 0;
         int s = 0;
         int state = 0;
+        public Boolean IsMoveToPointEnabled { get; set; }
 
         //Global variables
         internal const int CloseApp_Click = 0xF060;     //close button's code in windows api
@@ -35,13 +34,21 @@ namespace Karate_Scoring_App
 
             //TopMost = true;                                                                           //Application is in front of all other programs
             //FormBorderStyle = FormBorderStyle.None;                                                   //Do not apply any border to this program
-            WindowState     = FormWindowState.Maximized;                                              //Start this program maximised
+            //WindowState     = FormWindowState.Maximized;                                              //Start this program maximised
 
             object backgroundImage = Properties.Resources.ResourceManager.GetObject("backgroundimage_1280");
             this.BackgroundImage = (Image)backgroundImage;
 
+            timeSelection_Slider.SmallChange = 1;
+            timeSelection_Slider.LargeChange = 5;
 
-            inputTime_Textbox.Select();                                                                 //Puts focus on the textbox to enable typing immediately
+              inputTime_Textbox.Select();                                                                 //Puts focus on the textbox to enable typing immediately
+        }
+
+        private void timeSelection_Slider_Scroll(object sender, EventArgs e)
+        {
+            MessageBox.Show(timeSelection_Slider.Value.ToString());
+
         }
 
         public static void SetDoubleBuffered(System.Windows.Forms.Control c)

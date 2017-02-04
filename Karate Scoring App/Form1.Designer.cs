@@ -40,6 +40,7 @@
             this.blueScore_Label = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.lka_PictureBox = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.colonLabel = new System.Windows.Forms.Label();
             this.minsLabel = new System.Windows.Forms.Label();
@@ -48,21 +49,22 @@
             this.jodanKickRed_Button = new System.Windows.Forms.Button();
             this.sweepRed_Button = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.punchRed_Button = new System.Windows.Forms.Button();
-            this.chudanKick_Button = new System.Windows.Forms.Button();
-            this.lka_PictureBox = new System.Windows.Forms.PictureBox();
-            this.punchBlue_Button = new System.Windows.Forms.Button();
             this.redScore_Label = new System.Windows.Forms.Label();
+            this.chudanKick_Button = new System.Windows.Forms.Button();
+            this.punchBlue_Button = new System.Windows.Forms.Button();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.timeSelection_Slider = new System.Windows.Forms.TrackBar();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.lka_PictureBox)).BeginInit();
             this.tableLayoutPanel4.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.lka_PictureBox)).BeginInit();
             this.tableLayoutPanel6.SuspendLayout();
             this.tableLayoutPanel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.timeSelection_Slider)).BeginInit();
             this.SuspendLayout();
             // 
             // startTimer_Button
@@ -70,7 +72,7 @@
             this.startTimer_Button.Dock = System.Windows.Forms.DockStyle.Fill;
             this.startTimer_Button.Location = new System.Drawing.Point(3, 33);
             this.startTimer_Button.Name = "startTimer_Button";
-            this.startTimer_Button.Size = new System.Drawing.Size(101, 57);
+            this.startTimer_Button.Size = new System.Drawing.Size(110, 57);
             this.startTimer_Button.TabIndex = 0;
             this.startTimer_Button.Text = "Start";
             this.startTimer_Button.UseVisualStyleBackColor = true;
@@ -84,9 +86,9 @@
             // pauseTimer_Button
             // 
             this.pauseTimer_Button.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pauseTimer_Button.Location = new System.Drawing.Point(217, 33);
+            this.pauseTimer_Button.Location = new System.Drawing.Point(235, 33);
             this.pauseTimer_Button.Name = "pauseTimer_Button";
-            this.pauseTimer_Button.Size = new System.Drawing.Size(103, 57);
+            this.pauseTimer_Button.Size = new System.Drawing.Size(112, 57);
             this.pauseTimer_Button.TabIndex = 2;
             this.pauseTimer_Button.Text = "Pause";
             this.pauseTimer_Button.UseVisualStyleBackColor = true;
@@ -95,9 +97,9 @@
             // resetTime_Button
             // 
             this.resetTime_Button.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.resetTime_Button.Location = new System.Drawing.Point(110, 33);
+            this.resetTime_Button.Location = new System.Drawing.Point(119, 33);
             this.resetTime_Button.Name = "resetTime_Button";
-            this.resetTime_Button.Size = new System.Drawing.Size(101, 57);
+            this.resetTime_Button.Size = new System.Drawing.Size(110, 57);
             this.resetTime_Button.TabIndex = 3;
             this.resetTime_Button.Text = "Stop / Reset";
             this.resetTime_Button.UseVisualStyleBackColor = true;
@@ -106,9 +108,9 @@
             // inputTime_Textbox
             // 
             this.inputTime_Textbox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.inputTime_Textbox.Location = new System.Drawing.Point(110, 3);
+            this.inputTime_Textbox.Location = new System.Drawing.Point(119, 3);
             this.inputTime_Textbox.Name = "inputTime_Textbox";
-            this.inputTime_Textbox.Size = new System.Drawing.Size(101, 20);
+            this.inputTime_Textbox.Size = new System.Drawing.Size(110, 20);
             this.inputTime_Textbox.TabIndex = 4;
             this.inputTime_Textbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -146,6 +148,7 @@
             // 
             this.sweepBlue_Button.AccessibleRole = System.Windows.Forms.AccessibleRole.MenuBar;
             this.sweepBlue_Button.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.sweepBlue_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.sweepBlue_Button.Location = new System.Drawing.Point(3, 160);
             this.sweepBlue_Button.Name = "sweepBlue_Button";
             this.sweepBlue_Button.Size = new System.Drawing.Size(222, 152);
@@ -159,11 +162,12 @@
             this.blueScore_Label.AutoSize = true;
             this.blueScore_Label.BackColor = System.Drawing.Color.Transparent;
             this.blueScore_Label.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.blueScore_Label.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.blueScore_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 100F);
             this.blueScore_Label.ForeColor = System.Drawing.Color.Black;
-            this.blueScore_Label.Location = new System.Drawing.Point(3, 113);
+            this.blueScore_Label.Location = new System.Drawing.Point(3, 114);
             this.blueScore_Label.Name = "blueScore_Label";
-            this.blueScore_Label.Size = new System.Drawing.Size(453, 286);
+            this.blueScore_Label.Size = new System.Drawing.Size(453, 285);
             this.blueScore_Label.TabIndex = 19;
             this.blueScore_Label.Text = "0";
             this.blueScore_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -177,7 +181,7 @@
             this.tableLayoutPanel2.ColumnCount = 1;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel2.Controls.Add(this.blueScore_Label, 0, 1);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(783, 0);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(810, 0);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 2;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 28.57143F));
@@ -194,15 +198,30 @@
             // 
             this.tableLayoutPanel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel3.BackColor = System.Drawing.Color.Black;
             this.tableLayoutPanel3.ColumnCount = 1;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.Controls.Add(this.lka_PictureBox, 0, 0);
+            this.tableLayoutPanel3.ForeColor = System.Drawing.Color.Transparent;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(457, -1);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(323, 207);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(350, 207);
             this.tableLayoutPanel3.TabIndex = 22;
+            // 
+            // lka_PictureBox
+            // 
+            this.lka_PictureBox.BackColor = System.Drawing.Color.White;
+            this.lka_PictureBox.BackgroundImage = global::Karate_Scoring_App.Properties.Resources.LKA;
+            this.lka_PictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.lka_PictureBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lka_PictureBox.Location = new System.Drawing.Point(3, 3);
+            this.lka_PictureBox.Name = "lka_PictureBox";
+            this.lka_PictureBox.Size = new System.Drawing.Size(344, 201);
+            this.lka_PictureBox.TabIndex = 16;
+            this.lka_PictureBox.TabStop = false;
+            this.lka_PictureBox.WaitOnLoad = true;
             // 
             // tableLayoutPanel4
             // 
@@ -221,7 +240,7 @@
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 1;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 95F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(323, 92);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(350, 92);
             this.tableLayoutPanel4.TabIndex = 23;
             // 
             // colonLabel
@@ -230,9 +249,9 @@
             this.colonLabel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.colonLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F);
             this.colonLabel.ForeColor = System.Drawing.Color.White;
-            this.colonLabel.Location = new System.Drawing.Point(141, 0);
+            this.colonLabel.Location = new System.Drawing.Point(153, 0);
             this.colonLabel.Name = "colonLabel";
-            this.colonLabel.Size = new System.Drawing.Size(39, 95);
+            this.colonLabel.Size = new System.Drawing.Size(43, 95);
             this.colonLabel.TabIndex = 5;
             this.colonLabel.Text = ":";
             this.colonLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -245,7 +264,7 @@
             this.minsLabel.ForeColor = System.Drawing.Color.White;
             this.minsLabel.Location = new System.Drawing.Point(3, 0);
             this.minsLabel.Name = "minsLabel";
-            this.minsLabel.Size = new System.Drawing.Size(132, 95);
+            this.minsLabel.Size = new System.Drawing.Size(144, 95);
             this.minsLabel.TabIndex = 1;
             this.minsLabel.Text = "00";
             this.minsLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -256,9 +275,9 @@
             this.secondsLabel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.secondsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F);
             this.secondsLabel.ForeColor = System.Drawing.Color.White;
-            this.secondsLabel.Location = new System.Drawing.Point(186, 0);
+            this.secondsLabel.Location = new System.Drawing.Point(202, 0);
             this.secondsLabel.Name = "secondsLabel";
-            this.secondsLabel.Size = new System.Drawing.Size(134, 95);
+            this.secondsLabel.Size = new System.Drawing.Size(145, 95);
             this.secondsLabel.TabIndex = 6;
             this.secondsLabel.Text = "00";
             this.secondsLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -276,12 +295,12 @@
             this.tableLayoutPanel5.Controls.Add(this.resetTime_Button, 1, 1);
             this.tableLayoutPanel5.Controls.Add(this.startTimer_Button, 0, 1);
             this.tableLayoutPanel5.Controls.Add(this.inputTime_Textbox, 1, 0);
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(457, 621);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(457, 668);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 2;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5523F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 63F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(323, 93);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(350, 93);
             this.tableLayoutPanel5.TabIndex = 24;
             // 
             // jodanKickRed_Button
@@ -302,6 +321,7 @@
             // 
             this.sweepRed_Button.AccessibleRole = System.Windows.Forms.AccessibleRole.MenuBar;
             this.sweepRed_Button.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.sweepRed_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.sweepRed_Button.Location = new System.Drawing.Point(230, 160);
             this.sweepRed_Button.Name = "sweepRed_Button";
             this.sweepRed_Button.Size = new System.Drawing.Size(221, 152);
@@ -324,23 +344,18 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(454, 411);
             this.tableLayoutPanel1.TabIndex = 25;
             // 
-            // punchRed_Button
+            // redScore_Label
             // 
-            this.punchRed_Button.AccessibleRole = System.Windows.Forms.AccessibleRole.MenuBar;
-            this.punchRed_Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.punchRed_Button.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.punchRed_Button.FlatAppearance.BorderSize = 0;
-            this.punchRed_Button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.punchRed_Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.punchRed_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.punchRed_Button.ForeColor = System.Drawing.Color.Transparent;
-            this.punchRed_Button.Image = global::Karate_Scoring_App.Properties.Resources.karate_punch_icon_right;
-            this.punchRed_Button.Location = new System.Drawing.Point(3, 3);
-            this.punchRed_Button.Name = "punchRed_Button";
-            this.punchRed_Button.Size = new System.Drawing.Size(221, 151);
-            this.punchRed_Button.TabIndex = 12;
-            this.punchRed_Button.UseVisualStyleBackColor = true;
-            this.punchRed_Button.Click += new System.EventHandler(this.punchRed_Button_Click);
+            this.redScore_Label.AutoSize = true;
+            this.redScore_Label.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.redScore_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 100F);
+            this.redScore_Label.ForeColor = System.Drawing.Color.Black;
+            this.redScore_Label.Location = new System.Drawing.Point(3, 114);
+            this.redScore_Label.Name = "redScore_Label";
+            this.redScore_Label.Size = new System.Drawing.Size(448, 297);
+            this.redScore_Label.TabIndex = 19;
+            this.redScore_Label.Text = "0";
+            this.redScore_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // chudanKick_Button
             // 
@@ -348,6 +363,7 @@
             this.chudanKick_Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.chudanKick_Button.Dock = System.Windows.Forms.DockStyle.Fill;
             this.chudanKick_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chudanKick_Button.ForeColor = System.Drawing.Color.Transparent;
             this.chudanKick_Button.Image = global::Karate_Scoring_App.Properties.Resources.Chudan_Kick_Right_T;
             this.chudanKick_Button.Location = new System.Drawing.Point(230, 3);
             this.chudanKick_Button.Name = "chudanKick_Button";
@@ -355,19 +371,6 @@
             this.chudanKick_Button.TabIndex = 15;
             this.chudanKick_Button.UseVisualStyleBackColor = true;
             this.chudanKick_Button.Click += new System.EventHandler(this.chudanKickRed_Button_Click);
-            // 
-            // lka_PictureBox
-            // 
-            this.lka_PictureBox.BackColor = System.Drawing.Color.White;
-            this.lka_PictureBox.BackgroundImage = global::Karate_Scoring_App.Properties.Resources.LKA;
-            this.lka_PictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.lka_PictureBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lka_PictureBox.Location = new System.Drawing.Point(3, 3);
-            this.lka_PictureBox.Name = "lka_PictureBox";
-            this.lka_PictureBox.Size = new System.Drawing.Size(317, 201);
-            this.lka_PictureBox.TabIndex = 16;
-            this.lka_PictureBox.TabStop = false;
-            this.lka_PictureBox.WaitOnLoad = true;
             // 
             // punchBlue_Button
             // 
@@ -385,18 +388,6 @@
             this.punchBlue_Button.UseVisualStyleBackColor = true;
             this.punchBlue_Button.Click += new System.EventHandler(this.punchBlue_Button_Click);
             // 
-            // redScore_Label
-            // 
-            this.redScore_Label.AutoSize = true;
-            this.redScore_Label.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.redScore_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 100F);
-            this.redScore_Label.Location = new System.Drawing.Point(3, 114);
-            this.redScore_Label.Name = "redScore_Label";
-            this.redScore_Label.Size = new System.Drawing.Size(448, 297);
-            this.redScore_Label.TabIndex = 19;
-            this.redScore_Label.Text = "0";
-            this.redScore_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // tableLayoutPanel6
             // 
             this.tableLayoutPanel6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
@@ -404,12 +395,12 @@
             this.tableLayoutPanel6.ColumnCount = 2;
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel6.Controls.Add(this.punchRed_Button, 0, 0);
+            this.tableLayoutPanel6.Controls.Add(this.button1, 0, 0);
             this.tableLayoutPanel6.Controls.Add(this.chudanKick_Button, 1, 0);
             this.tableLayoutPanel6.Controls.Add(this.sweepRed_Button, 1, 1);
             this.tableLayoutPanel6.Controls.Add(this.jodanKickRed_Button, 0, 1);
             this.tableLayoutPanel6.ForeColor = System.Drawing.Color.Transparent;
-            this.tableLayoutPanel6.Location = new System.Drawing.Point(0, 399);
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(0, 446);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 2;
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -429,7 +420,7 @@
             this.tableLayoutPanel7.Controls.Add(this.sweepBlue_Button, 0, 1);
             this.tableLayoutPanel7.Controls.Add(this.jodanKickBlue_Button, 1, 1);
             this.tableLayoutPanel7.ForeColor = System.Drawing.Color.Transparent;
-            this.tableLayoutPanel7.Location = new System.Drawing.Point(783, 399);
+            this.tableLayoutPanel7.Location = new System.Drawing.Point(810, 446);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
             this.tableLayoutPanel7.RowCount = 2;
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -437,14 +428,42 @@
             this.tableLayoutPanel7.Size = new System.Drawing.Size(456, 315);
             this.tableLayoutPanel7.TabIndex = 27;
             // 
+            // button1
+            // 
+            this.button1.AccessibleRole = System.Windows.Forms.AccessibleRole.MenuBar;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.Color.Transparent;
+            this.button1.Image = global::Karate_Scoring_App.Properties.Resources.karate_punch_icon_right;
+            this.button1.Location = new System.Drawing.Point(3, 3);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(221, 151);
+            this.button1.TabIndex = 28;
+            this.button1.Text = "\r\n";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // timeSelection_Slider
+            // 
+            this.timeSelection_Slider.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.timeSelection_Slider.BackColor = System.Drawing.Color.Black;
+            this.timeSelection_Slider.Location = new System.Drawing.Point(457, 620);
+            this.timeSelection_Slider.Maximum = 5;
+            this.timeSelection_Slider.Name = "timeSelection_Slider";
+            this.timeSelection_Slider.Size = new System.Drawing.Size(350, 45);
+            this.timeSelection_Slider.TabIndex = 28;
+            this.timeSelection_Slider.Scroll += new System.EventHandler(this.timeSelection_Slider_Scroll);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
-            this.BackColor = System.Drawing.SystemColors.Control;
+            this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1237, 714);
+            this.ClientSize = new System.Drawing.Size(1264, 761);
+            this.Controls.Add(this.timeSelection_Slider);
             this.Controls.Add(this.tableLayoutPanel7);
             this.Controls.Add(this.tableLayoutPanel6);
             this.Controls.Add(this.tableLayoutPanel1);
@@ -452,6 +471,7 @@
             this.Controls.Add(this.tableLayoutPanel4);
             this.Controls.Add(this.tableLayoutPanel3);
             this.Controls.Add(this.tableLayoutPanel2);
+            this.ForeColor = System.Drawing.Color.Black;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
@@ -459,15 +479,17 @@
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
             this.tableLayoutPanel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.lka_PictureBox)).EndInit();
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel5.ResumeLayout(false);
             this.tableLayoutPanel5.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.lka_PictureBox)).EndInit();
             this.tableLayoutPanel6.ResumeLayout(false);
             this.tableLayoutPanel7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.timeSelection_Slider)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -490,7 +512,6 @@
         private System.Windows.Forms.Label colonLabel;
         private System.Windows.Forms.Label minsLabel;
         private System.Windows.Forms.Label secondsLabel;
-        private System.Windows.Forms.Button punchRed_Button;
         private System.Windows.Forms.Button chudanKick_Button;
         private System.Windows.Forms.Button jodanKickRed_Button;
         private System.Windows.Forms.Button sweepRed_Button;
@@ -498,6 +519,8 @@
         private System.Windows.Forms.Label redScore_Label;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TrackBar timeSelection_Slider;
     }
 }
 
