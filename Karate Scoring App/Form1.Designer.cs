@@ -47,18 +47,22 @@
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.jodanKickRed_Button = new System.Windows.Forms.Button();
             this.sweepRed_Button = new System.Windows.Forms.Button();
-            this.redScore_Label = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.punchRed_Button = new System.Windows.Forms.Button();
             this.chudanKick_Button = new System.Windows.Forms.Button();
             this.lka_PictureBox = new System.Windows.Forms.PictureBox();
             this.punchBlue_Button = new System.Windows.Forms.Button();
+            this.redScore_Label = new System.Windows.Forms.Label();
+            this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.lka_PictureBox)).BeginInit();
+            this.tableLayoutPanel6.SuspendLayout();
+            this.tableLayoutPanel7.SuspendLayout();
             this.SuspendLayout();
             // 
             // startTimer_Button
@@ -111,34 +115,40 @@
             // chudanKickBlue_Button
             // 
             this.chudanKickBlue_Button.AccessibleRole = System.Windows.Forms.AccessibleRole.MenuBar;
+            this.chudanKickBlue_Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.chudanKickBlue_Button.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.chudanKickBlue_Button.Location = new System.Drawing.Point(3, 585);
+            this.chudanKickBlue_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chudanKickBlue_Button.ForeColor = System.Drawing.Color.Transparent;
+            this.chudanKickBlue_Button.Image = global::Karate_Scoring_App.Properties.Resources.Chudan_Kick_Left_T;
+            this.chudanKickBlue_Button.Location = new System.Drawing.Point(3, 3);
             this.chudanKickBlue_Button.Name = "chudanKickBlue_Button";
-            this.chudanKickBlue_Button.Size = new System.Drawing.Size(448, 39);
+            this.chudanKickBlue_Button.Size = new System.Drawing.Size(222, 151);
             this.chudanKickBlue_Button.TabIndex = 15;
-            this.chudanKickBlue_Button.Text = "Chudan Kick";
             this.chudanKickBlue_Button.UseVisualStyleBackColor = true;
             this.chudanKickBlue_Button.Click += new System.EventHandler(this.chudanKickBlue_Button_Click);
             // 
             // jodanKickBlue_Button
             // 
             this.jodanKickBlue_Button.AccessibleRole = System.Windows.Forms.AccessibleRole.MenuBar;
+            this.jodanKickBlue_Button.BackColor = System.Drawing.Color.Transparent;
             this.jodanKickBlue_Button.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.jodanKickBlue_Button.Location = new System.Drawing.Point(3, 630);
+            this.jodanKickBlue_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.jodanKickBlue_Button.ForeColor = System.Drawing.Color.Transparent;
+            this.jodanKickBlue_Button.Image = global::Karate_Scoring_App.Properties.Resources.Jodan_Kick_Left_T;
+            this.jodanKickBlue_Button.Location = new System.Drawing.Point(231, 160);
             this.jodanKickBlue_Button.Name = "jodanKickBlue_Button";
-            this.jodanKickBlue_Button.Size = new System.Drawing.Size(448, 37);
+            this.jodanKickBlue_Button.Size = new System.Drawing.Size(222, 152);
             this.jodanKickBlue_Button.TabIndex = 14;
-            this.jodanKickBlue_Button.Text = "Jodan Kick";
-            this.jodanKickBlue_Button.UseVisualStyleBackColor = true;
+            this.jodanKickBlue_Button.UseVisualStyleBackColor = false;
             this.jodanKickBlue_Button.Click += new System.EventHandler(this.jodanKickBlue_Button_Click);
             // 
             // sweepBlue_Button
             // 
             this.sweepBlue_Button.AccessibleRole = System.Windows.Forms.AccessibleRole.MenuBar;
             this.sweepBlue_Button.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.sweepBlue_Button.Location = new System.Drawing.Point(3, 673);
+            this.sweepBlue_Button.Location = new System.Drawing.Point(3, 160);
             this.sweepBlue_Button.Name = "sweepBlue_Button";
-            this.sweepBlue_Button.Size = new System.Drawing.Size(448, 38);
+            this.sweepBlue_Button.Size = new System.Drawing.Size(222, 152);
             this.sweepBlue_Button.TabIndex = 13;
             this.sweepBlue_Button.Text = "Sweep";
             this.sweepBlue_Button.UseVisualStyleBackColor = true;
@@ -147,41 +157,37 @@
             // blueScore_Label
             // 
             this.blueScore_Label.AutoSize = true;
+            this.blueScore_Label.BackColor = System.Drawing.Color.Transparent;
             this.blueScore_Label.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.blueScore_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.blueScore_Label.ForeColor = System.Drawing.Color.Transparent;
-            this.blueScore_Label.Location = new System.Drawing.Point(3, 167);
+            this.blueScore_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 100F);
+            this.blueScore_Label.ForeColor = System.Drawing.Color.Black;
+            this.blueScore_Label.Location = new System.Drawing.Point(3, 113);
             this.blueScore_Label.Name = "blueScore_Label";
-            this.blueScore_Label.Size = new System.Drawing.Size(448, 244);
+            this.blueScore_Label.Size = new System.Drawing.Size(453, 286);
             this.blueScore_Label.TabIndex = 19;
             this.blueScore_Label.Text = "0";
             this.blueScore_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tableLayoutPanel2
             // 
-            this.tableLayoutPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel2.BackColor = System.Drawing.Color.Transparent;
             this.tableLayoutPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.tableLayoutPanel2.CausesValidation = false;
             this.tableLayoutPanel2.ColumnCount = 1;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Controls.Add(this.punchBlue_Button, 0, 3);
-            this.tableLayoutPanel2.Controls.Add(this.chudanKickBlue_Button, 0, 4);
-            this.tableLayoutPanel2.Controls.Add(this.jodanKickBlue_Button, 0, 5);
-            this.tableLayoutPanel2.Controls.Add(this.sweepBlue_Button, 0, 6);
             this.tableLayoutPanel2.Controls.Add(this.blueScore_Label, 0, 1);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(783, 0);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 7;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 167F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 244F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 12F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 159F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 45F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 43F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 22F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(454, 714);
+            this.tableLayoutPanel2.RowCount = 2;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 28.57143F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 71.42857F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(459, 399);
             this.tableLayoutPanel2.TabIndex = 21;
             // 
             // tableLayoutPanel3
@@ -282,11 +288,13 @@
             // 
             this.jodanKickRed_Button.AccessibleRole = System.Windows.Forms.AccessibleRole.MenuBar;
             this.jodanKickRed_Button.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.jodanKickRed_Button.Location = new System.Drawing.Point(3, 630);
+            this.jodanKickRed_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.jodanKickRed_Button.ForeColor = System.Drawing.Color.Transparent;
+            this.jodanKickRed_Button.Image = global::Karate_Scoring_App.Properties.Resources.Jodan_Kick_Right_T;
+            this.jodanKickRed_Button.Location = new System.Drawing.Point(3, 160);
             this.jodanKickRed_Button.Name = "jodanKickRed_Button";
-            this.jodanKickRed_Button.Size = new System.Drawing.Size(448, 37);
+            this.jodanKickRed_Button.Size = new System.Drawing.Size(221, 152);
             this.jodanKickRed_Button.TabIndex = 14;
-            this.jodanKickRed_Button.Text = "Jodan Kick";
             this.jodanKickRed_Button.UseVisualStyleBackColor = true;
             this.jodanKickRed_Button.Click += new System.EventHandler(this.jodanKickRed_Button_Click);
             // 
@@ -294,49 +302,26 @@
             // 
             this.sweepRed_Button.AccessibleRole = System.Windows.Forms.AccessibleRole.MenuBar;
             this.sweepRed_Button.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.sweepRed_Button.Location = new System.Drawing.Point(3, 673);
+            this.sweepRed_Button.Location = new System.Drawing.Point(230, 160);
             this.sweepRed_Button.Name = "sweepRed_Button";
-            this.sweepRed_Button.Size = new System.Drawing.Size(448, 38);
+            this.sweepRed_Button.Size = new System.Drawing.Size(221, 152);
             this.sweepRed_Button.TabIndex = 13;
             this.sweepRed_Button.Text = "Sweep";
             this.sweepRed_Button.UseVisualStyleBackColor = true;
             this.sweepRed_Button.Click += new System.EventHandler(this.jodanKickRed_Button_Click);
             // 
-            // redScore_Label
-            // 
-            this.redScore_Label.AutoSize = true;
-            this.redScore_Label.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.redScore_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.redScore_Label.Location = new System.Drawing.Point(3, 167);
-            this.redScore_Label.Name = "redScore_Label";
-            this.redScore_Label.Size = new System.Drawing.Size(448, 244);
-            this.redScore_Label.TabIndex = 19;
-            this.redScore_Label.Text = "0";
-            this.redScore_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
             this.tableLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Controls.Add(this.punchRed_Button, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.chudanKick_Button, 0, 4);
-            this.tableLayoutPanel1.Controls.Add(this.jodanKickRed_Button, 0, 5);
-            this.tableLayoutPanel1.Controls.Add(this.sweepRed_Button, 0, 6);
             this.tableLayoutPanel1.Controls.Add(this.redScore_Label, 0, 1);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 7;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 167F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 244F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 14F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 157F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 45F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 43F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 22F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(454, 714);
+            this.tableLayoutPanel1.RowCount = 2;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 27.73723F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 72.26277F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(454, 411);
             this.tableLayoutPanel1.TabIndex = 25;
             // 
             // punchRed_Button
@@ -350,9 +335,9 @@
             this.punchRed_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.punchRed_Button.ForeColor = System.Drawing.Color.Transparent;
             this.punchRed_Button.Image = global::Karate_Scoring_App.Properties.Resources.karate_punch_icon_right;
-            this.punchRed_Button.Location = new System.Drawing.Point(3, 428);
+            this.punchRed_Button.Location = new System.Drawing.Point(3, 3);
             this.punchRed_Button.Name = "punchRed_Button";
-            this.punchRed_Button.Size = new System.Drawing.Size(448, 151);
+            this.punchRed_Button.Size = new System.Drawing.Size(221, 151);
             this.punchRed_Button.TabIndex = 12;
             this.punchRed_Button.UseVisualStyleBackColor = true;
             this.punchRed_Button.Click += new System.EventHandler(this.punchRed_Button_Click);
@@ -360,12 +345,14 @@
             // chudanKick_Button
             // 
             this.chudanKick_Button.AccessibleRole = System.Windows.Forms.AccessibleRole.MenuBar;
+            this.chudanKick_Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.chudanKick_Button.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.chudanKick_Button.Location = new System.Drawing.Point(3, 585);
+            this.chudanKick_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chudanKick_Button.Image = global::Karate_Scoring_App.Properties.Resources.Chudan_Kick_Right_T;
+            this.chudanKick_Button.Location = new System.Drawing.Point(230, 3);
             this.chudanKick_Button.Name = "chudanKick_Button";
-            this.chudanKick_Button.Size = new System.Drawing.Size(448, 39);
+            this.chudanKick_Button.Size = new System.Drawing.Size(221, 151);
             this.chudanKick_Button.TabIndex = 15;
-            this.chudanKick_Button.Text = "Chudan Kick";
             this.chudanKick_Button.UseVisualStyleBackColor = true;
             this.chudanKick_Button.Click += new System.EventHandler(this.chudanKickRed_Button_Click);
             // 
@@ -390,13 +377,65 @@
             this.punchBlue_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.punchBlue_Button.ForeColor = System.Drawing.Color.Transparent;
             this.punchBlue_Button.Image = global::Karate_Scoring_App.Properties.Resources.karate_punch_icon_left;
-            this.punchBlue_Button.Location = new System.Drawing.Point(3, 426);
+            this.punchBlue_Button.Location = new System.Drawing.Point(231, 3);
             this.punchBlue_Button.Name = "punchBlue_Button";
-            this.punchBlue_Button.Size = new System.Drawing.Size(448, 153);
+            this.punchBlue_Button.Size = new System.Drawing.Size(222, 151);
             this.punchBlue_Button.TabIndex = 12;
             this.punchBlue_Button.Text = "\r\n";
             this.punchBlue_Button.UseVisualStyleBackColor = true;
             this.punchBlue_Button.Click += new System.EventHandler(this.punchBlue_Button_Click);
+            // 
+            // redScore_Label
+            // 
+            this.redScore_Label.AutoSize = true;
+            this.redScore_Label.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.redScore_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 100F);
+            this.redScore_Label.Location = new System.Drawing.Point(3, 114);
+            this.redScore_Label.Name = "redScore_Label";
+            this.redScore_Label.Size = new System.Drawing.Size(448, 297);
+            this.redScore_Label.TabIndex = 19;
+            this.redScore_Label.Text = "0";
+            this.redScore_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // tableLayoutPanel6
+            // 
+            this.tableLayoutPanel6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.tableLayoutPanel6.BackColor = System.Drawing.Color.Transparent;
+            this.tableLayoutPanel6.ColumnCount = 2;
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel6.Controls.Add(this.punchRed_Button, 0, 0);
+            this.tableLayoutPanel6.Controls.Add(this.chudanKick_Button, 1, 0);
+            this.tableLayoutPanel6.Controls.Add(this.sweepRed_Button, 1, 1);
+            this.tableLayoutPanel6.Controls.Add(this.jodanKickRed_Button, 0, 1);
+            this.tableLayoutPanel6.ForeColor = System.Drawing.Color.Transparent;
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(0, 399);
+            this.tableLayoutPanel6.Name = "tableLayoutPanel6";
+            this.tableLayoutPanel6.RowCount = 2;
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(454, 315);
+            this.tableLayoutPanel6.TabIndex = 26;
+            // 
+            // tableLayoutPanel7
+            // 
+            this.tableLayoutPanel7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel7.BackColor = System.Drawing.Color.Transparent;
+            this.tableLayoutPanel7.ColumnCount = 2;
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel7.Controls.Add(this.punchBlue_Button, 1, 0);
+            this.tableLayoutPanel7.Controls.Add(this.chudanKickBlue_Button, 0, 0);
+            this.tableLayoutPanel7.Controls.Add(this.sweepBlue_Button, 0, 1);
+            this.tableLayoutPanel7.Controls.Add(this.jodanKickBlue_Button, 1, 1);
+            this.tableLayoutPanel7.ForeColor = System.Drawing.Color.Transparent;
+            this.tableLayoutPanel7.Location = new System.Drawing.Point(783, 399);
+            this.tableLayoutPanel7.Name = "tableLayoutPanel7";
+            this.tableLayoutPanel7.RowCount = 2;
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(456, 315);
+            this.tableLayoutPanel7.TabIndex = 27;
             // 
             // Form1
             // 
@@ -406,6 +445,8 @@
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1237, 714);
+            this.Controls.Add(this.tableLayoutPanel7);
+            this.Controls.Add(this.tableLayoutPanel6);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.tableLayoutPanel5);
             this.Controls.Add(this.tableLayoutPanel4);
@@ -424,6 +465,8 @@
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.lka_PictureBox)).EndInit();
+            this.tableLayoutPanel6.ResumeLayout(false);
+            this.tableLayoutPanel7.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -451,8 +494,10 @@
         private System.Windows.Forms.Button chudanKick_Button;
         private System.Windows.Forms.Button jodanKickRed_Button;
         private System.Windows.Forms.Button sweepRed_Button;
-        private System.Windows.Forms.Label redScore_Label;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.Label redScore_Label;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
     }
 }
 
