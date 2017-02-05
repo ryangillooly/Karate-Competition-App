@@ -73,9 +73,79 @@ namespace Karate_Scoring_App.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap blueBack {
+        internal static System.Drawing.Bitmap backgroundimage_1280 {
             get {
-                object obj = ResourceManager.GetObject("blueBack", resourceCulture);
+                object obj = ResourceManager.GetObject("backgroundimage_1280", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Chudan_Kick_Left_T {
+            get {
+                object obj = ResourceManager.GetObject("Chudan_Kick_Left_T", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Chudan_Kick_Right_T {
+            get {
+                object obj = ResourceManager.GetObject("Chudan_Kick_Right_T", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Jodan_Kick_Left_T {
+            get {
+                object obj = ResourceManager.GetObject("Jodan_Kick_Left_T", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Jodan_Kick_Right_T {
+            get {
+                object obj = ResourceManager.GetObject("Jodan_Kick_Right_T", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap karate_punch_icon_left {
+            get {
+                object obj = ResourceManager.GetObject("karate_punch_icon_left", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap karate_punch_icon_right {
+            get {
+                object obj = ResourceManager.GetObject("karate_punch_icon_right", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap karate_punch_icon_white {
+            get {
+                object obj = ResourceManager.GetObject("karate_punch_icon_white", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -86,16 +156,6 @@ namespace Karate_Scoring_App.Properties {
         internal static System.Drawing.Bitmap LKA {
             get {
                 object obj = ResourceManager.GetObject("LKA", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap redBack {
-            get {
-                object obj = ResourceManager.GetObject("redBack", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

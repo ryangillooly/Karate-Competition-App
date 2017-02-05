@@ -15,6 +15,7 @@ namespace Karate_Scoring_App
         int m = 0;
         int s = 0;
         int state = 0;
+        public Boolean IsMoveToPointEnabled { get; set; }
 
         //Global variables
         internal const int CloseApp_Click = 0xF060;     //close button's code in windows api
@@ -28,42 +29,45 @@ namespace Karate_Scoring_App
         }
 
         private void Form1_Load(object sender, EventArgs e)
-        {                                
+        {
+            this.DoubleBuffered = true;
+
             //TopMost = true;                                                                           //Application is in front of all other programs
             //FormBorderStyle = FormBorderStyle.None;                                                   //Do not apply any border to this program
             //WindowState     = FormWindowState.Maximized;                                              //Start this program maximised
 
-            this.BackColor = Color.White;                                                               //Sets the Form background color to white
+            object backgroundImage = Properties.Resources.ResourceManager.GetObject("backgroundimage_1280");
+            this.BackgroundImage = (Image)backgroundImage;
 
-            object LKA                   = Properties.Resources.ResourceManager.GetObject("LKA");       //Creates the object LKA, for the LKA image
-            object blueBackground        = Properties.Resources.ResourceManager.GetObject("blueBack");  //Creates the object blueBackground, for the blueBackground image
-            object redBackground         = Properties.Resources.ResourceManager.GetObject("redBack");   //Creates the object redBackground, for the redBackground image
+            timeSelection_Slider.SmallChange = 1;
+            timeSelection_Slider.LargeChange = 5;
 
-            lka_PictureBox.Image         = (Image)LKA;                                                  //Sets the LKA Picture Box image = LKA image
-            //blueBack_PictureBox.Image    = (Image)blueBackground;                                       //Sets the blueBackground Picture Box image = blueBackground image
-            //redBack_PictureBox.Image     = (Image)redBackground;                                        //Sets the redBackground Picture Box image = redBackground image
-
-            BackgroundImage = (Image)BackgroundImage;
-
-            lka_PictureBox.SizeMode      = PictureBoxSizeMode.StretchImage;                             //Stretches the image to the size of the PictureBox
-            blueBack_PictureBox.SizeMode = PictureBoxSizeMode.StretchImage;                             //Stretches the image to the size of the PictureBox
-            redBack_PictureBox.SizeMode  = PictureBoxSizeMode.StretchImage;                             //Stretches the image to the size of the PictureBox
-
-            blueScore_Label.Parent       = blueBack_PictureBox;                                         //Sets the blueBack_PictureBox as the parent of the blueBack_Label
-            blueScore_Label.BackColor    = Color.Transparent;                                           //Sets the background of the label to transparent
-            //blueScore_Label.Left = 300;
-
-            redScore_Label.Parent        = redBack_PictureBox;                                          //Sets the redBack_PictureBox as the parent of the redBack_Label
-            redScore_Label.BackColor     = Color.Transparent;                                           //Sets the background of the label to transparent
-                                                                                                        // redScore_Label.Left = 250;
-
-            //blueBack_PictureBox.Image.Width = 
-
-            inputTime_Textbox.Select();                                                                 //Puts focus on the textbox to enable typing immediately
+              inputTime_Textbox.Select();                                                                 //Puts focus on the textbox to enable typing immediately
         }
 
-        //var ratioX = (double)maxWidth / image.Width;
+        private void timeSelection_Slider_Scroll(object sender, EventArgs e)
+        {
+            MessageBox.Show(timeSelection_Slider.Value.ToString());
 
+        }
+
+        public static void SetDoubleBuffered(System.Windows.Forms.Control c)
+        {
+            if (System.Windows.Forms.SystemInformation.TerminalServerSession)
+                return;
+            System.Reflection.PropertyInfo aProp = typeof(System.Windows.Forms.Control).GetProperty("DoubleBuffered", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
+            aProp.SetValue(c, true, null);
+        }
+
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                CreateParams cp = base.CreateParams;
+                cp.ExStyle |= 0x02000000;
+                return cp;
+            }
+        }
 
 
         //*******************************************************************************//
@@ -186,11 +190,7 @@ namespace Karate_Scoring_App
 
         private void punchRed_KeyStroke_Press(object sender, EventArgs e)
         {
-            if (timer1.Enabled)
-            {
-                redScore = Convert.ToInt32(redScore_Label.Text) + 1;
-                redScore_Label.Text = Convert.ToString(redScore);
-            }
+
         }
 
         private void chudanKickRed_KeyStroke_Press(object sender, EventArgs e)

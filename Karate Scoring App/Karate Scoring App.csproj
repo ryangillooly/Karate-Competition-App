@@ -59,38 +59,45 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Resources\digital-7.ttf" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Jodan_Kick_Right_T.png" />
+    <None Include="Resources\Jodan_Kick_Left_T.png" />
+    <None Include="Resources\Chudan_Kick_Right_T.png" />
+    <None Include="Resources\Chudan_Kick_Left_T.png" />
+    <None Include="Resources\karate-punch-icon.png" />
+    <None Include="Resources\LKA.jpg" />
+    <None Include="Resources\karate-punch-icon-left.png" />
+    <None Include="Resources\backgroundimage_1280.jpg" />
+    <None Include="Resources\karate-punch-icon-white.png" />
+    <None Include="Resources\backgroundImage.jpg" />
     <None Include="backgroundImage.jpg" />
-    <Content Include="Resources\backgroundImage.jpg" />
     <None Include="redBack.jpg" />
     <None Include="blueBack.jpg" />
     <Content Include="LKA.jpg" />
-    <None Include="Resources\LKA.jpg" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Resources\NewFolder1\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
